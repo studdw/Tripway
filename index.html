@@ -3,43 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tripway</title>
+    <title>Contato</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-
     <header>
-        <h1>TRIPWAY</h1>
-        <p>Sua agência de viagens</p>
-        <img style="width: 40%;" src="imagens/Marketing-para-agencias-de-viagens.webp" alt="imagem agencia">
+        <h1>Bem vindos à página de Contato</h1>
+        <p>Aqui é a página que você consegue entrar em contato com a gente!</p>
     </header>
 
     <nav>
         <ul>
-            <li><a href="..//pages/destinos.html">Destinos</a></li>
-            <li><a href="..//pages/pacotes.html">Pacotes</a></li>
-            <li><a href="..//pages/contato.html">Contato</a></li>
+            <li><a href="../index.html">Início</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="destinos.html">Destinos</a></li>
+            <li><a href="pacotes.html">Pacotes</a></li>
         </ul>
     </nav>
 
     <main>
         <section>
-            <h2>Bem-vindo a Tripway</h2>
-            <p>encontre os melhores destinos para suas ferias.</p>
-        </section>
+            <h2>Preencha para contato</h2>
+            
+            <form>
+                <h1>Formulário de Contato</h1>
 
-        <section>
-            <h3>destaques</h3>
-            <ul>
-                <li>Cristo Redentor</li>
-                <li>Coliseu</li>
-                <li>Muralha da China</li>
-            </ul>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" placeholder="Ex: Lucas Kaftan" required>
+
+                <label for="email">Email:</label>
+                <input type="text" id="email" placeholder="Ex: nome@gmail.com" required>
+
+                <label for="destino">Destino:</label>
+                <select id="destino" required>
+                    <option value="">Selecione um destino</option>
+                    <option value="machu">Machu Picchu</option>
+                    <option value="eiffel">Torre Eiffel</option>
+                    <option value="muralha">Muralha da China</option>
+                    <option value="cristo">Cristo Redentor</option>
+                    <option value="coliseu">Coliseu</option>
+                </select>
+
+                <label for="date">Data:</label>
+                <input type="date" id="date" required>
+
+                <label for="people">Quantidade de pessoas:</label>
+                <select id="people" required>
+                    <option value="">Selecione</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" placeholder="Ex: Tenho dúvidas..." rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+
+            <p style="text-align: center; margin-top: 20px;">Qualquer sugestão é só nos enviar</p>
+            <div style="text-align: center;">
+                <img style="width: 100px;" src="../imagens/Instagram_Glyph_Gradient.png" alt="instagram">
+            </div>
         </section>
     </main>
-  <footer>
-        <p> Tripway, voce chegou ao pe da pagina</p>
-        <p> Criadores do Tripway: Lucas Kaftan, Matheus Ruas, Joao Carlos</p>
-    </footer>
 
+    <footer>
+        <a href="../index.html">Voltar à página inicial</a>
+    </footer>
 </body>
 </html>
