@@ -32,3 +32,29 @@ header img {
   width: 40%;
   margin-top: 15px;
 }
+
+/* NAVEGAÇÃO */
+nav {
+  background-color: #3498db;
+  padding: 15px;
+}
+ 
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+ 
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 15px;
+}
+ 
+nav a:hover {
+  background-color: #2980b9;
+  border-radius: 4px;
+}
