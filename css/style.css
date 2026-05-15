@@ -218,3 +218,34 @@ footer a:hover {
     font-size: 1.4rem;
   }
 }
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.3rem;
+  }
+ 
+  section h2 {
+    font-size: 1.2rem;
+  }
+ 
+  .card {
+    flex: 1 1 100%;
+  }
+ 
+  button {
+    width: 100%;
+  }
+ 
+  form {
+    padding: 15px;
+  }
+ 
+  nav ul {
+    gap: 5px;
+  }
+ 
+  nav a {
+    padding: 6px 10px;
+    font-size: 0.9rem;
+  }
+}
